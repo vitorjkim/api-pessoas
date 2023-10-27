@@ -47,18 +47,36 @@ class Pessoa {
     getTelefone() {
         return this.telefone;
     }
+    /**
+     *  Atripui o telefone para pessoa
+     *
+     * @param _telefone
+     * telefone da pessoa
+     */
     setTelefone(_telefone) {
         this.telefone = _telefone;
     }
     getEndereco() {
         return this.endereco;
     }
+    /**
+     *  Atripui o endereço para pessoa
+     *
+     * @param _endereco
+     * endereço da pessoa
+     */
     setEndereco(_endereco) {
         this.endereco = _endereco;
     }
     getAltura() {
         return this.altura;
     }
+    /**
+     *  Atripui altura para pessoa
+     * @param _altura
+     *
+     * altura da pessoa
+     */
     setAltura(_altura) {
         this.altura = _altura;
     }
@@ -103,6 +121,14 @@ class Pessoa {
     }
     comerPrato(_prato) {
         console.log(`${this.nome} comeu: ${_prato}`);
+    }
+    /**
+     *
+     * CRUD
+     */
+    cadastroPessoa(pessoa) {
+        //persistindo os dados
+        console.log(`${pessoa.nome} cadastrado(a) com sucesso!`);
     }
 }
 exports.Pessoa = Pessoa;
